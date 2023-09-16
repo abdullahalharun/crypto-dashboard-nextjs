@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white w-[307px] border-r-2 border-[#C0C5CB5E]">
+    <div className="flex flex-col items-center min-h-screen bg-white dark:bg-slate-900 w-[307px] border-r-2 border-[#C0C5CB5E]">
       {/* sidebar logo */}
       <div className="flex p-10">
         <svg
@@ -62,7 +62,7 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </div>
         </Link>
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Sidebar = () => {
             <span>Markets</span>
           </div>
         </Link>
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const Sidebar = () => {
             <span>Transactions</span>
           </div>
         </Link>
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ const Sidebar = () => {
             <span>Profile</span>
           </div>
         </Link>
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ const Sidebar = () => {
 
         <div className="border-t-2 "></div>
 
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ const Sidebar = () => {
             <span>Help</span>
           </div>
         </Link>
-        <Link href={"/"} className="">
+        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"

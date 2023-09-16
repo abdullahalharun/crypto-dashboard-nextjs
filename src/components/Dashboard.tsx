@@ -1,13 +1,18 @@
 import Image from "next/image";
 import React from "react";
+import ConverCurrency from "./dashboard/ConverCurrency";
+import History from "./dashboard/History";
+import Markets from "./dashboard/Markets";
+import Assets from "./dashboard/Assets";
+import Chart1 from "./dashboard/Chart1";
 
 const Dashboard = () => {
   return (
-    <>
+    <div className="overflow-scroll">
       {/* Top card */}
-      <div className="grid grid-cols-4 gap-4 w-full p-8">
+      <div className="grid grid-cols-4 gap-6 w-full p-6">
         {/* Report card 1 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-md">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
           {/* card top */}
           <div className="flex justify-between items-center gap-2">
             <div className="bg-[#2F80ED33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -62,7 +67,7 @@ const Dashboard = () => {
         </div>
 
         {/* Report card 2 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-md">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#FF9C0733] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -111,7 +116,7 @@ const Dashboard = () => {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-md">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -162,7 +167,7 @@ const Dashboard = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-md">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -213,70 +218,27 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex px-8">
-        <div className="bg-white flex flex-col rounded-md w-2/3 p-8">
-          <div className="flex justify-between items-start">
-            <div className="flex justify-between w-1/3">
-              <div className="flex flex-col">
-                <h1>BTCUSDT</h1>
-                <p>Bitcoin</p>
-              </div>
-              <div className="flex flex-col">
-                <h1>$23,738</h1>
-                <p>+23.6%</p>
-              </div>
-            </div>
+      {/* row 2 */}
+      <div className="flex gap-6 px-8">
+        {/* Chart 1 */}
+        <Chart1 />
 
-            <div className="flex gap-4">
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                1H
-              </a>
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                3H
-              </a>
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                5H
-              </a>
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                1D
-              </a>
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                1W
-              </a>
-              <a
-                className="bg-gray-100 rounded-md font-bold text-sm p-2"
-                href="#"
-              >
-                1M
-              </a>
-            </div>
-          </div>
-          <div className="w-full">
-            <Image
-              src={"/images/chart/chart1.png"}
-              alt="chart1"
-              width={766}
-              height={264}
-            />
-          </div>
-        </div>
+        {/* Markets */}
+        <Markets />
       </div>
-    </>
+
+      {/* row 3 */}
+      <div className="flex gap-6 p-8">
+        {/* Assets */}
+        <Assets />
+
+        {/* Convert block */}
+        <ConverCurrency />
+
+        {/* history */}
+        <History />
+      </div>
+    </div>
   );
 };
 

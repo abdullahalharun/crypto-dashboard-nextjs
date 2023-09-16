@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Topbar = () => {
   return (
-    <div className="flex justify-between items-center bg-white w-full h-24 px-8">
+    <div className="flex justify-between items-center bg-white w-[1421px] h-[98px] px-8">
       {/* Search input */}
       <div className="flex justify-between items-center rounded-full border px-4  w-1/2">
         <input
@@ -28,7 +28,6 @@ const Topbar = () => {
       </div>
 
       {/* Topbar right */}
-
       <div className="flex items-center gap-8">
         {/* Notification */}
         <div className="cursor-pointer">
@@ -50,8 +49,8 @@ const Topbar = () => {
           </svg>
         </div>
         {/* Profile */}
-        <div className="flex justify-between items-center gap-8 cursor-pointer bg-light px-5 py-3 rounded-lg">
-          <div className="flex items-center gap-2">
+        <div className="flex justify-between items-center gap-8 cursor-pointer bg-light px-5 py-3 rounded-lg h-[59px]">
+          <div className="flex items-center gap-1">
             <Image
               src={"/images/pro_pic.png"}
               alt="profile"
@@ -59,8 +58,10 @@ const Topbar = () => {
               height={45}
             />
             <div className="flex flex-col">
-              <h2 className="font-bold text-sm">Andy Warhol</h2>
-              <p className="text-[#5E6E78] text-xs">andywarhol@mail.com</p>
+              <h2 className="font-semibold text-[13px]">Andy Warhol</h2>
+              <p className="text-[#5E6E78] text-[11px] font-medium">
+                andywarhol@mail.com
+              </p>
             </div>
           </div>
           <svg

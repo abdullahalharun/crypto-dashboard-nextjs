@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Chart1() {
   return (
-    <div className="bg-white flex flex-col rounded-[15px] w-[851px] p-8">
+    <div className="bg-white dark:bg-[#1C1C25] flex flex-col rounded-[15px] w-[851px] p-8">
       <div className="flex justify-between items-start">
         <div className="flex justify-between w-1/3">
           <div className="flex flex-col">
@@ -18,24 +18,39 @@ export default function Chart1() {
 
         <div className="flex gap-4">
           <a
-            className="bg-gray-100 text-primary rounded-md font-bold text-sm p-2"
+            className="bg-gray-100 dark:bg-dark text-primary rounded-md font-bold text-sm p-2"
             href="#"
           >
             1H
           </a>
-          <a className="bg-gray-100 rounded-md font-bold text-sm p-2" href="#">
+          <a
+            className="bg-gray-100 dark:bg-[#262C3038] rounded-md font-bold text-sm p-2"
+            href="#"
+          >
             3H
           </a>
-          <a className="bg-gray-100 rounded-md font-bold text-sm p-2" href="#">
+          <a
+            className="bg-gray-100 dark:bg-[#262C3038] rounded-md font-bold text-sm p-2"
+            href="#"
+          >
             5H
           </a>
-          <a className="bg-gray-100 rounded-md font-bold text-sm p-2" href="#">
+          <a
+            className="bg-gray-100 dark:bg-[#262C3038] rounded-md font-bold text-sm p-2"
+            href="#"
+          >
             1D
           </a>
-          <a className="bg-gray-100 rounded-md font-bold text-sm p-2" href="#">
+          <a
+            className="bg-gray-100 dark:bg-[#262C3038] rounded-md font-bold text-sm p-2"
+            href="#"
+          >
             1W
           </a>
-          <a className="bg-gray-100 rounded-md font-bold text-sm p-2" href="#">
+          <a
+            className="bg-gray-100 dark:bg-[#262C3038] rounded-md font-bold text-sm p-2"
+            href="#"
+          >
             1M
           </a>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ConverCurrency() {
   return (
-    <div className="bg-white flex flex-col gap-4 rounded-[15px] w-[366px] p-8">
+    <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-4 rounded-[15px] w-[366px] p-8">
       <div className="flex justify-between items-center gap-4">
         <h1 className="text-xl font-semibold">Convert </h1>
         <svg
@@ -29,11 +29,11 @@ export default function ConverCurrency() {
           />
         </svg>
       </div>
-      <div className="bg-[#F9F9FA] flex justify-between items-center rounded-md w-[304px]">
+      <div className="bg-[#F9F9FA] dark:bg-[#121212] flex justify-between items-center rounded-md w-[304px]">
         <input
           type="text"
           placeholder="100"
-          className="bg-[#F9F9FA] rounded-md p-2 text-[#626D7D] w-2/3"
+          className="focus:outline-none bg-[#F9F9FA] dark:bg-[#121212] rounded-md p-2 text-[#626D7D] w-2/3"
         />
 
         <select
@@ -49,19 +49,19 @@ export default function ConverCurrency() {
           </option>
         </select>
       </div>
-      <div className="bg-[#F9F9FA] flex justify-between items-center rounded-md w-[304px]">
+      <div className="bg-[#F9F9FA] dark:bg-[#121212] flex justify-between items-center rounded-md w-[304px]">
         <input
           type="text"
           placeholder="0.0043"
-          className="bg-[#F9F9FA] rounded-md p-2 text-[#626D7D] w-2/3"
+          className="focus:outline-none bg-[#F9F9FA] dark:bg-[#121212] rounded-md p-2 text-[#626D7D] w-2/3"
         />
         <select
           name="amount"
           id="amount"
-          className="bg-[#FCF4DB] rounded-lg p-1 mr-3 text-start text-[#FF7C04]"
+          className="bg-[#FCF4DB] dark:bg-[#3C2E05] rounded-lg p-1 mr-3 text-start text-[#FF7C04] "
         >
           <option value="BTC">
-            <span className="font-semibold text-[10px]">BTC</span>
+            <span className="font-semibold text-[10px] ">BTC</span>
           </option>
           <option value="USDT">
             <span className="font-semibold text-[10px]">USDT </span>
@@ -69,7 +69,7 @@ export default function ConverCurrency() {
         </select>
       </div>
 
-      <button className="p-2 rounded-lg bg-[#3380FF] text-white text-sm ">
+      <button className="p-2 rounded-lg bg-[#3380FF] text-white dark:text-black text-sm font-semibold">
         Convert Now
       </button>
       <p className="text-[8px] font-normal text-[#626D7D]">

@@ -1,15 +1,44 @@
+"use client";
 import Image from "next/image";
 
+import ThemeSwitcher from "./ThemeSwitcher";
+import { useState } from "react";
+
 const Topbar = () => {
+  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleSidebar = () => {
+    setOpen(true);
+  };
+
+  const handleDropdown = () => {};
+
   return (
-    <div className="flex justify-between items-center bg-white  h-[98px] px-8">
+    <div className="flex justify-between items-center bg-white dark:bg-[#1C1C25]  h-[98px] px-8">
+      <div className="block md:hidden pr-4" onClick={handleSidebar}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
       {/* Search input */}
       <div className="flex justify-between items-center rounded-full border px-4  w-2/5">
         <input
           type="text"
           id="search"
           placeholder="Search..."
-          className="w-full px-4 py-2"
+          className="focus:outline-none w-full px-4 py-2 dark:bg-[#1C1C25]"
         />
         <label htmlFor="search">
           <svg
@@ -29,6 +58,8 @@ const Topbar = () => {
 
       {/* Topbar right */}
       <div className="flex items-center gap-8">
+        <ThemeSwitcher />
+
         {/* Notification */}
         <div className="cursor-pointer">
           <svg
@@ -49,7 +80,10 @@ const Topbar = () => {
           </svg>
         </div>
         {/* Profile */}
-        <div className="flex justify-between items-center gap-8 cursor-pointer bg-light px-5 py-3 rounded-lg h-[59px]">
+        <div
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="flex justify-between items-center gap-8 cursor-pointer bg-light dark:bg-[#131313] px-5 py-3 rounded-lg h-[59px]"
+        >
           <div className="flex items-center gap-1">
             <Image
               src={"/images/pro_pic.png"}
@@ -76,6 +110,23 @@ const Topbar = () => {
               fill="#A2A7B4"
             />
           </svg>
+
+          {/* dropdown menu */}
+          {menuOpen && (
+            <div className="absolute shadow-lg rounded-md p-2 mt-48 bg-white dark:bg-[#1C1C25] w-[280px] transition ease-in-out duration-300">
+              <ul>
+                <li className="px-3 py-2 mx-2 my-1 font-semibold text-sm hover:bg-[#D5E6FB] dark:hover:bg-[#062141] rounded-md">
+                  My Profile
+                </li>
+                <li className="px-3 py-2 mx-2 my-1 font-semibold text-sm hover:bg-[#D5E6FB] dark:hover:bg-[#062141] rounded-md">
+                  Settings
+                </li>
+                <li className="px-3 py-2 mx-2 my-1 font-semibold text-sm hover:bg-[#D5E6FB] dark:hover:bg-[#062141] rounded-md">
+                  Log Out
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

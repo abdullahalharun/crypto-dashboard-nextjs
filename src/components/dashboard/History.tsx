@@ -1,11 +1,9 @@
-import React from "react";
-
 export default function History() {
   return (
-    <div className="bg-white flex flex-col rounded-[15px] w-[622px] p-4">
+    <div className="bg-white dark:bg-[#1C1C25] flex flex-col rounded-[15px] w-[622px] p-4">
       <div className="flex justify-between items-center gap-4 px-4">
         <h1 className="text-xl font-semibold">History</h1>
-        <button className="border py-1 px-3 text-[10px] rounded-lg text-[#00000066] mr-4">
+        <button className="border dark:border-gray-600 py-1 px-3 font-semibold text-[10px] rounded-lg dark:bg-[#0D0D0D38] text-[#00000066] dark:text-gray-500 mr-4">
           View All
         </button>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Assets() {
   return (
-    <div className="bg-white flex flex-col rounded-[15px] w-[315px] p-8">
+    <div className="bg-white dark:bg-[#1C1C25] flex flex-col rounded-[15px] w-[315px] p-8">
       <h1 className="text-xl font-bold">Assets</h1>
       <div className="flex justify-center -mt-2">
         <Image

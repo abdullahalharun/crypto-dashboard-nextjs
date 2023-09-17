@@ -1,37 +1,35 @@
-import React from "react";
-
 export default function Markets() {
   return (
-    <div className="bg-white flex flex-col gap-2 rounded-[15px] w-[478px] p-4">
+    <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-2 rounded-[15px] w-[478px] p-4">
       <div className="flex items-center gap-2 px-2">
         <h1 className="text-xl font-semibold">Markets</h1>
         <div className="flex gap-2">
           <a
-            className="bg-gray-100 text-primary rounded-md text-[10px] font-semibold p-1"
+            className="bg-gray-100 dark:bg-dark text-primary rounded-md text-[10px] font-semibold p-1"
             href="#"
           >
             All
           </a>
           <a
-            className="bg-gray-100 rounded-md text-[10px] font-semibold p-1"
+            className="bg-gray-100 dark:bg-[#262C3038]  rounded-md text-[10px] dark:text-white font-semibold p-1"
             href="#"
           >
             Metaverse
           </a>
           <a
-            className="bg-gray-100 rounded-md text-[10px] font-semibold p-1"
+            className="bg-gray-100 dark:bg-[#262C3038]  rounded-md text-[10px] dark:text-white font-semibold p-1"
             href="#"
           >
             Gaming
           </a>
           <a
-            className="bg-gray-100 rounded-md text-[10px] font-semibold p-1"
+            className="bg-gray-100 dark:bg-[#262C3038]  rounded-md text-[10px] dark:text-white font-semibold p-1"
             href="#"
           >
             Defi
           </a>
           <a
-            className="bg-gray-100 rounded-md text-[10px] font-semibold p-1"
+            className="bg-gray-100 dark:bg-[#262C3038]  rounded-md text-[10px] dark:text-white font-semibold p-1"
             href="#"
           >
             NFT
@@ -125,7 +123,7 @@ export default function Markets() {
         </tr>
       </table>
       <div className="flex justify-end px-4">
-        <button className="text-[10px] border px-3 py-1 rounded-lg text-[#00000066]">
+        <button className="text-[10px] font-semibold border dark:border-gray-6 00 px-3 py-1 rounded-lg text-[#00000066] dark:text-gray-500">
           View All
         </button>
       </div>

@@ -12,7 +12,7 @@ const Dashboard = () => {
       {/* Top card */}
       <div className="flex gap-6 p-6">
         {/* Report card 1 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[302px]">
+        <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-4 p-4 rounded-xl w-[302px]">
           {/* card top */}
           <div className="flex justify-between items-center gap-2">
             <div className="bg-[#2F80ED33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -29,7 +29,7 @@ const Dashboard = () => {
                 />
               </svg>
             </div>
-            <h3 className="font-bold text-lg">Estimated Balance</h3>
+            <h3 className="font-semibold text-base ">Estimated Balance</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -55,19 +55,23 @@ const Dashboard = () => {
               />
             </svg>
           </div>
-          <h1 className="font-bold text-2xl">$123,987</h1>
+          <h1 className="font-semibold text-3xl">$123,987</h1>
           {/* card bottom */}
           <div className="flex justify-between items-center gap-2">
-            <p className="text-gray-500 text-xs">Monthly Profit</p>
-            <span className="text-green-500 text-xs font-bold">+$2560.78</span>
-            <span className="bg-green-200 text-xs font-bold p-1.5 rounded-full text-green-500">
+            <p className="text-[#626D7D] text-[13px] font-medium">
+              Monthly Profit
+            </p>
+            <span className="text-[#219653] text-[13px] font-semibold">
+              +$2560.78
+            </span>
+            <span className="bg-[#21965333] text-[11px] font-semibold p-1.5 rounded-full text-[#219653]">
               +14.67%
             </span>
           </div>
         </div>
 
         {/* Report card 2 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
+        <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#FF9C0733] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -85,12 +89,12 @@ const Dashboard = () => {
               </svg>
             </div>
             <div className="flex flex-col">
-              <h3 className="font-bold text-lg">BTCUSDT</h3>
-              <p className="text-sm text-gray-500">Bitcoin</p>
+              <h3 className="font-semibold text-base">BTCUSDT</h3>
+              <p className="text-[#626D7D] text-[13px] font-medium">Bitcoin</p>
             </div>
           </div>
           <div className="flex justify-between items-end gap-4">
-            <h1 className="font-bold text-2xl">$23,738</h1>
+            <h1 className="font-semibold text-3xl">$23,738</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="139"
@@ -108,15 +112,15 @@ const Dashboard = () => {
           </div>
           {/* card bottom */}
           <div className="flex justify-between items-center gap-2">
-            <p className="text-gray-500 text-xs">PNL Daily</p>
+            <p className="text-[#626D7D] text-[13px] font-medium">PNL Daily</p>
             <span className="text-orange-700 text-xs font-bold">-$16.78</span>
-            <span className="bg-green-200 text-xs font-bold p-1.5 rounded-full text-green-500">
+            <span className="bg-[#21965333] text-[11px] font-semibold p-1.5 rounded-full text-[#219653]">
               +14.67%
             </span>
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
+        <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -134,13 +138,13 @@ const Dashboard = () => {
               </svg>
             </div>
             <div className="flex flex-col">
-              <h3 className="font-bold text-lg">ETHUSDT</h3>
-              <p className="text-sm text-gray-500">Ethereum</p>
+              <h3 className="font-semibold text-base">ETHUSDT</h3>
+              <p className="text-[#626D7D] text-[13px] font-medium">Ethereum</p>
             </div>
           </div>
           {/* card center */}
           <div className="flex justify-between items-end gap-4">
-            <h1 className="font-bold text-2xl">$23,738</h1>
+            <h1 className="font-semibold text-3xl">$23,738</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="135"
@@ -158,16 +162,18 @@ const Dashboard = () => {
           </div>
           {/* card bottom */}
           <div className="flex justify-between items-center gap-2">
-            <p className="text-gray-500 text-xs">Monthly Profit</p>
-            <span className="text-green-500 text-xs font-bold">+$189.91</span>
-            <span className="bg-green-200 text-xs font-bold p-1.5 rounded-full text-green-500">
+            <p className="text-[#626D7D] text-[13px]">Monthly Profit</p>
+            <span className="text-[#219653] text-[13px] font-semibold">
+              +$189.91
+            </span>
+            <span className="bg-[#21965333] text-[11px] font-semibold p-1.5 rounded-full text-[#219653]">
               +24.68%
             </span>
           </div>
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
+        <div className="bg-white dark:bg-[#1C1C25] flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -185,13 +191,13 @@ const Dashboard = () => {
               </svg>
             </div>
             <div className="flex flex-col">
-              <h3 className="font-bold text-lg">SOLUSDT</h3>
-              <p className="text-sm text-gray-500">Solana</p>
+              <h3 className="font-semibold text-base">SOLUSDT</h3>
+              <p className="text-[#626D7D] text-[13px] font-medium">Solana</p>
             </div>
           </div>
           {/* card center */}
           <div className="flex justify-between items-end gap-4">
-            <h1 className="font-bold text-2xl">$23,738</h1>
+            <h1 className="font-semibold text-3xl">$23,738</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="138"
@@ -209,9 +215,13 @@ const Dashboard = () => {
           </div>
           {/* card bottom */}
           <div className="flex justify-between items-center gap-2">
-            <p className="text-gray-500 text-xs">Monthly Profit</p>
-            <span className="text-green-500 text-xs font-bold">+$556.14</span>
-            <span className="bg-green-200 text-xs font-bold p-1.5 rounded-full text-green-500">
+            <p className="text-[#626D7D] text-[13px] font-medium">
+              Monthly Profit
+            </p>
+            <span className="text-[#219653] text-[13px] font-semibold">
+              +$556.14
+            </span>
+            <span className="bg-[#21965333] text-[11px] font-semibold p-1.5 rounded-full text-[#219653]">
               +64.11%
             </span>
           </div>
@@ -219,7 +229,7 @@ const Dashboard = () => {
       </div>
 
       {/* row 2 */}
-      <div className="flex gap-6 px-8">
+      <div className="flex gap-6 px-6">
         {/* Chart 1 */}
         <Chart1 />
 
@@ -228,7 +238,7 @@ const Dashboard = () => {
       </div>
 
       {/* row 3 */}
-      <div className="flex gap-6 p-8">
+      <div className="flex gap-6 p-6">
         {/* Assets */}
         <Assets />
 

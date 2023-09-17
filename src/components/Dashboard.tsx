@@ -8,11 +8,11 @@ import Chart1 from "./dashboard/Chart1";
 
 const Dashboard = () => {
   return (
-    <div className="overflow-scroll">
+    <div className="overflow-scroll w-full">
       {/* Top card */}
-      <div className="grid grid-cols-4 gap-6 w-full p-6">
+      <div className="flex gap-6 p-6">
         {/* Report card 1 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[302px]">
           {/* card top */}
           <div className="flex justify-between items-center gap-2">
             <div className="bg-[#2F80ED33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -67,7 +67,7 @@ const Dashboard = () => {
         </div>
 
         {/* Report card 2 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#FF9C0733] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -116,7 +116,7 @@ const Dashboard = () => {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">
@@ -167,7 +167,7 @@ const Dashboard = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl">
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-xl w-[325px]">
           {/* card top */}
           <div className="flex items-center gap-3">
             <div className="bg-[#4D21FF33] flex justify-center items-center w-11 h-11 rounded-lg">

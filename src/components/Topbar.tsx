@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Topbar = () => {
   return (
-    <div className="flex justify-between items-center bg-white w-[1421px] h-[98px] px-8">
+    <div className="flex justify-between items-center bg-white  h-[98px] px-8">
       {/* Search input */}
-      <div className="flex justify-between items-center rounded-full border px-4  w-1/2">
+      <div className="flex justify-between items-center rounded-full border px-4  w-2/5">
         <input
           type="text"
           id="search"

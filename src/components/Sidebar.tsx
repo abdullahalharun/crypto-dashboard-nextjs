@@ -154,7 +154,7 @@ const Sidebar = () => {
             <span>Help</span>
           </div>
         </Link>
-        <Link href={"/"} className="hover:bg-[#D5E6FB] rounded-lg">
+        <Link href={"/"} className="hover:bg-red-100 rounded-lg">
           <div className="flex items-center gap-4 py-3 px-8 rounded-2xl font-medium w-[208px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"

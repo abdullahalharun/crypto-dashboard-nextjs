@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CandleStickChart from "./CandleStickChart";
 
 export default function Chart1() {
   return (
@@ -56,12 +57,14 @@ export default function Chart1() {
         </div>
       </div>
       <div className="w-full pt-8">
-        <Image
+        {/* <Image
           src={"/images/chart/chart1.png"}
           alt="chart1"
           width={766}
           height={264}
-        />
+        /> */}
+
+        <CandleStickChart />
       </div>
     </div>
   );
